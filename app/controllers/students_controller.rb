@@ -34,7 +34,7 @@ class StudentsController < ApplicationController
 
   def destroy
     @student.destroy
-    redirect_to students_url
+    redirect_to students_urls
   end
 
   private

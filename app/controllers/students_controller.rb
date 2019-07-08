@@ -19,7 +19,7 @@ class StudentsController < ApplicationController
     if @student.update(student_params)
       redirect_to students_url
     else
-      redirect_to edit_student_url(@studentt.id)
+      redirect_to edit_student_url
     end
   end
 

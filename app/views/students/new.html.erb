@@ -1,0 +1,27 @@
+<h1> Create New Student </h1>
+<%= form_for @student do |f| %>
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name, class:"form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :class %>
+    <%= f.text_area :class_university, class:"form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :score %>
+    <%= f.text_area :score, class:"form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :learning_power %>
+    <%= f.text_area :learning_power, class:"form-control" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Save", class:"btn btn-primary" %>
+  </div>  
+<% end %>
+ <%= link_to 'Back', students_path %>
